@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4DC60FCD14A10B560031D6CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC60FCC14A10B560031D6CA /* UIKit.framework */; };
+		4DC60FCF14A10B560031D6CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC60FCE14A10B560031D6CA /* Foundation.framework */; };
+		4DC60FD114A10B560031D6CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC60FD014A10B560031D6CA /* CoreGraphics.framework */; };
+		4DC60FD714A10B560031D6CA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4DC60FD514A10B560031D6CA /* InfoPlist.strings */; };
+		4DC60FD914A10B560031D6CA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC60FD814A10B560031D6CA /* main.m */; };
+		4DC60FDD14A10B560031D6CA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC60FDC14A10B560031D6CA /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4DC60FC814A10B560031D6CA /* IASegmentedViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IASegmentedViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DC60FCC14A10B560031D6CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		4DC60FCE14A10B560031D6CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		4DC60FD014A10B560031D6CA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		4DC60FD414A10B560031D6CA /* IASegmentedViewController-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "IASegmentedViewController-Info.plist"; sourceTree = "<group>"; };
+		4DC60FD614A10B560031D6CA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		4DC60FD814A10B560031D6CA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4DC60FDA14A10B560031D6CA /* IASegmentedViewController-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IASegmentedViewController-Prefix.pch"; sourceTree = "<group>"; };
+		4DC60FDB14A10B560031D6CA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4DC60FDC14A10B560031D6CA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DC60FC514A10B560031D6CA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC60FCD14A10B560031D6CA /* UIKit.framework in Frameworks */,
+				4DC60FCF14A10B560031D6CA /* Foundation.framework in Frameworks */,
+				4DC60FD114A10B560031D6CA /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DC60FBD14A10B560031D6CA = {
+			isa = PBXGroup;
+			children = (
+				4DC60FD214A10B560031D6CA /* IASegmentedViewController */,
+				4DC60FCB14A10B560031D6CA /* Frameworks */,
+				4DC60FC914A10B560031D6CA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4DC60FC914A10B560031D6CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DC60FC814A10B560031D6CA /* IASegmentedViewController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DC60FCB14A10B560031D6CA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DC60FCC14A10B560031D6CA /* UIKit.framework */,
+				4DC60FCE14A10B560031D6CA /* Foundation.framework */,
+				4DC60FD014A10B560031D6CA /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DC60FD214A10B560031D6CA /* IASegmentedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4DC60FDB14A10B560031D6CA /* AppDelegate.h */,
+				4DC60FDC14A10B560031D6CA /* AppDelegate.m */,
+				4DC60FD314A10B560031D6CA /* Supporting Files */,
+			);
+			path = IASegmentedViewController;
+			sourceTree = "<group>";
+		};
+		4DC60FD314A10B560031D6CA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DC60FD414A10B560031D6CA /* IASegmentedViewController-Info.plist */,
+				4DC60FD514A10B560031D6CA /* InfoPlist.strings */,
+				4DC60FD814A10B560031D6CA /* main.m */,
+				4DC60FDA14A10B560031D6CA /* IASegmentedViewController-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4DC60FC714A10B560031D6CA /* IASegmentedViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DC60FE014A10B560031D6CA /* Build configuration list for PBXNativeTarget "IASegmentedViewController" */;
+			buildPhases = (
+				4DC60FC414A10B560031D6CA /* Sources */,
+				4DC60FC514A10B560031D6CA /* Frameworks */,
+				4DC60FC614A10B560031D6CA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IASegmentedViewController;
+			productName = IASegmentedViewController;
+			productReference = 4DC60FC814A10B560031D6CA /* IASegmentedViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DC60FBF14A10B560031D6CA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "Interstellar Apps";
+			};
+			buildConfigurationList = 4DC60FC214A10B560031D6CA /* Build configuration list for PBXProject "IASegmentedViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4DC60FBD14A10B560031D6CA;
+			productRefGroup = 4DC60FC914A10B560031D6CA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DC60FC714A10B560031D6CA /* IASegmentedViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DC60FC614A10B560031D6CA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC60FD714A10B560031D6CA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DC60FC414A10B560031D6CA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DC60FD914A10B560031D6CA /* main.m in Sources */,
+				4DC60FDD14A10B560031D6CA /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4DC60FD514A10B560031D6CA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4DC60FD614A10B560031D6CA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4DC60FDE14A10B560031D6CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4DC60FDF14A10B560031D6CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4DC60FE114A10B560031D6CA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IASegmentedViewController/IASegmentedViewController-Prefix.pch";
+				INFOPLIST_FILE = "IASegmentedViewController/IASegmentedViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		4DC60FE214A10B560031D6CA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "IASegmentedViewController/IASegmentedViewController-Prefix.pch";
+				INFOPLIST_FILE = "IASegmentedViewController/IASegmentedViewController-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DC60FC214A10B560031D6CA /* Build configuration list for PBXProject "IASegmentedViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC60FDE14A10B560031D6CA /* Debug */,
+				4DC60FDF14A10B560031D6CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DC60FE014A10B560031D6CA /* Build configuration list for PBXNativeTarget "IASegmentedViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DC60FE114A10B560031D6CA /* Debug */,
+				4DC60FE214A10B560031D6CA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DC60FBF14A10B560031D6CA /* Project object */;
+}
