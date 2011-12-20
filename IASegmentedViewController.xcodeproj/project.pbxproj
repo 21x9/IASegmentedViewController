@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4DC05AE914A10EEC0067DBD1 /* IASegmentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC05AE814A10EEC0067DBD1 /* IASegmentedViewController.m */; };
 		4DC60FCD14A10B560031D6CA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC60FCC14A10B560031D6CA /* UIKit.framework */; };
 		4DC60FCF14A10B560031D6CA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC60FCE14A10B560031D6CA /* Foundation.framework */; };
 		4DC60FD114A10B560031D6CA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DC60FD014A10B560031D6CA /* CoreGraphics.framework */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4DC05AE714A10EEC0067DBD1 /* IASegmentedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IASegmentedViewController.h; sourceTree = "<group>"; };
+		4DC05AE814A10EEC0067DBD1 /* IASegmentedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IASegmentedViewController.m; sourceTree = "<group>"; };
 		4DC60FC814A10B560031D6CA /* IASegmentedViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IASegmentedViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DC60FCC14A10B560031D6CA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4DC60FCE14A10B560031D6CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -75,6 +78,8 @@
 				4DC60FDB14A10B560031D6CA /* AppDelegate.h */,
 				4DC60FDC14A10B560031D6CA /* AppDelegate.m */,
 				4DC60FD314A10B560031D6CA /* Supporting Files */,
+				4DC05AE714A10EEC0067DBD1 /* IASegmentedViewController.h */,
+				4DC05AE814A10EEC0067DBD1 /* IASegmentedViewController.m */,
 			);
 			path = IASegmentedViewController;
 			sourceTree = "<group>";
@@ -154,6 +159,7 @@
 			files = (
 				4DC60FD914A10B560031D6CA /* main.m in Sources */,
 				4DC60FDD14A10B560031D6CA /* AppDelegate.m in Sources */,
+				4DC05AE914A10EEC0067DBD1 /* IASegmentedViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +263,7 @@
 				4DC60FE214A10B560031D6CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
