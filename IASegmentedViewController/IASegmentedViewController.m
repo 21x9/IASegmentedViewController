@@ -14,9 +14,11 @@
 @property (nonatomic, strong, readwrite) UISegmentedControl *segmentedControl;
 
 @property (nonatomic, strong) UINavigationBar *navigationBar;
+@property (nonatomic, strong) UIToolbar *toolbar;
 
 // View Setup
 - (void)setupNavigationBar;
+- (void)setupToolbar;
 - (void)setupSegmentedControl;
 
 // Segmented Control Management
@@ -40,14 +42,16 @@
 @synthesize viewControllers;
 @synthesize activeViewController;
 @synthesize segmentedControl;
+@synthesize segmentedControlPosition;
 
 #pragma mark - Private Properties
 @synthesize navigationBar;
+@synthesize toolbar;
 
 #pragma mark - Initialization
-- (id)initWithViewControllers:(NSArray *)controllers
+- (id)initWithViewControllers:(NSArray *)controllers segmentedControlPosition:(IASegmentedControlPosition)position
 {
-    NSParameterAssert(controllers);
+    NSParameterAssert(controllers && position >= 0 && position < 2);
     
     self = [super init];
     
@@ -55,6 +59,7 @@
         return nil;
     
     viewControllers = controllers;
+    segmentedControlPosition = position;
     
     return self;
 }
@@ -79,7 +84,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self setupNavigationBar];
+    
+    if (self.segmentedControlPosition == IASegmentedControlPositionTop)
+        [self setupNavigationBar];
+    else
+        [self setupToolbar];
+    
     [self setupSegmentedControl];
 }
 
@@ -92,6 +102,15 @@
     self.navigationBar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 44.0f)];
     [self.navigationBar pushNavigationItem:self.navigationItem animated:NO];
     [self.view addSubview:self.navigationBar];
+}
+
+- (void)setupToolbar
+{
+    if (self.navigationController)
+        return;
+    
+    self.toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0.0f, CGRectGetHeight(self.view.frame) - 44.0f, 320.0f, 44.0f)];
+    [self.view addSubview:self.toolbar];
 }
 
 - (void)setupSegmentedControl
@@ -111,7 +130,13 @@
     frame.size.width = 300.0f;
     self.segmentedControl.frame = frame;
     
-    self.navigationItem.titleView = self.segmentedControl;
+    if (self.segmentedControlPosition == IASegmentedControlPositionTop)
+        self.navigationItem.titleView = self.segmentedControl;
+    else
+    {
+        UIBarButtonItem *barItem = [[UIBarButtonItem alloc] initWithCustomView:self.segmentedControl];
+        self.toolbar.items = [NSArray arrayWithObject:barItem];
+    }
 }
 
 #pragma mark - UISegmentedControl Management
@@ -162,9 +187,18 @@
 - (CGRect)frameForChildView
 {
     CGRect frame = CGRectZero;
-    frame.origin.y = CGRectGetHeight(self.navigationBar.frame);
     frame.size.width = CGRectGetWidth(self.view.frame);
-    frame.size.height = CGRectGetHeight(self.view.frame) - frame.origin.y;
+
+    if (self.segmentedControlPosition == IASegmentedControlPositionTop)
+    {
+        frame.origin.y = CGRectGetHeight(self.navigationBar.frame);
+        frame.size.height = CGRectGetHeight(self.view.frame) - frame.origin.y;
+    }
+    else
+    {
+        frame.origin.y = 0.0f;
+        frame.size.height = CGRectGetHeight(self.view.frame) - CGRectGetHeight(self.toolbar.frame);
+    }
 
     return frame;
 }

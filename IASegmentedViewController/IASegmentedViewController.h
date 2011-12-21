@@ -8,12 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
+typedef enum
+{
+    IASegmentedControlPositionTop,
+    IASegmentedControlPositionBottom
+} IASegmentedControlPosition;
+
 @interface IASegmentedViewController : UIViewController
 
 @property (nonatomic, strong) NSArray *viewControllers;
 @property (nonatomic, strong, readonly) UIViewController *activeViewController;
 @property (nonatomic, strong, readonly) UISegmentedControl *segmentedControl;
+@property (nonatomic, assign) IASegmentedControlPosition segmentedControlPosition;
 
-- (id)initWithViewControllers:(NSArray *)controllers;
+- (id)initWithViewControllers:(NSArray *)controllers segmentedControlPosition:(IASegmentedControlPosition)position;
 
 @end

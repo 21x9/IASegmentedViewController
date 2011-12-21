@@ -35,7 +35,7 @@
     
     NSArray *viewControllers = [NSArray arrayWithObjects:vc1, vc2, vc3, nil];
     
-    IASegmentedViewController *svc = [[IASegmentedViewController alloc] initWithViewControllers:viewControllers];
+    IASegmentedViewController *svc = [[IASegmentedViewController alloc] initWithViewControllers:viewControllers segmentedControlPosition:IASegmentedControlPositionBottom];
     
     self.window.rootViewController = svc;
     self.window.backgroundColor = [UIColor whiteColor];
