@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "IASegmentedViewController.h"
 
 @implementation AppDelegate
 
@@ -15,7 +16,28 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+
+    UIViewController *vc1 = [[UIViewController alloc] init];
+    vc1.title = @"Featured";
+    vc1.view.backgroundColor = [UIColor lightGrayColor];
+    
+    UIViewController *vc2 = [[UIViewController alloc] init];
+    vc2.title = @"What's Hot";
+    vc2.view.backgroundColor = [UIColor darkGrayColor];
+    
+    UIViewController *vc3 = [[UIViewController alloc] init];
+    vc3.title = @"Top Grossing";
+    vc3.view.backgroundColor = [UIColor purpleColor];
+    
+    UIViewController *vc4 = [[UIViewController alloc] init];
+    vc4.title = @"New";
+    vc4.view.backgroundColor = [UIColor magentaColor];
+    
+    NSArray *viewControllers = [NSArray arrayWithObjects:vc1, vc2, vc3, nil];
+    
+    IASegmentedViewController *svc = [[IASegmentedViewController alloc] initWithViewControllers:viewControllers];
+    
+    self.window.rootViewController = svc;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES; 

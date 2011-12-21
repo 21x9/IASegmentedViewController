@@ -10,4 +10,10 @@
 
 @interface IASegmentedViewController : UIViewController
 
+@property (nonatomic, strong) NSArray *viewControllers;
+@property (nonatomic, strong, readonly) UIViewController *activeViewController;
+@property (nonatomic, strong, readonly) UISegmentedControl *segmentedControl;
+
+- (id)initWithViewControllers:(NSArray *)controllers;
+
 @end
